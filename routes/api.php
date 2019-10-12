@@ -17,7 +17,4 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-
-Route::get('oi', 'Api\TesteController@oi');
-
-Route::get('update', 'Api\DataBaseController@update')->name('update.database');;
+Route::get('update', 'Api\DataBaseController@update')->name('update.database');
