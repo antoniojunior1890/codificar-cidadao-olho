@@ -17,4 +17,8 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::get('update', 'Api\DataBaseController@update')->name('update.database');
+Route::get('update-deputados', 'Api\DeputadoController@update')->name('update.deputados');
+
+Route::get('update-verbas-indenizatorias', 'Api\VerbasIndenizatoriasController@update')->name('update.verbas.ndenizatorias');
+
+Route::get('update', 'Api\TesteController@update');
