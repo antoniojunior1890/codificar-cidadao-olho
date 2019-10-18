@@ -15,11 +15,13 @@ class CreateVerbasIndenizatoriasTable extends Migration
     {
         Schema::create('verbas_indenizatorias', function (Blueprint $table) {
 //            $table->integer('codTipoDespesa')->primary();
+            $table->bigIncrements('id');
             $table->integer('deputado_id');
 //            $table->foreign('deputado_id')
 //                ->references('id')
 //                ->on('deputados');
-            $table->string('dataReferencia');
+            $table->date('dataReferencia');
+            $table->integer('quantidade');
 //            $table->string('valor');
         });
     }
